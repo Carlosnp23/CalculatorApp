@@ -2,8 +2,12 @@
 //  ViewController.swift
 //  CalculatorApp
 //
-//  Created by Hyo on 2022-09-25.
-//
+//  File name: CalculatorApp
+//  Author's nme: Carlos Norambuena Perez
+//  Student ID: 301265667
+//  Date: 2022-09-25
+//  App Description: Calculator App (Assigment 1)
+//  Version of Xcode: Version 14.0 (14A309)
 
 import UIKit
 
@@ -11,70 +15,71 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-    }
-
-    @IBAction func BtnClean(_ sender: Any) {
     }
     
-    @IBAction func BtnParenthesis(_ sender: Any) {
+    
+    @IBAction func Btnzero(_ sender: UIButton) {
     }
     
-    @IBAction func BtnPercent(_ sender: Any) {
+    @IBAction func BtnOne(_ sender: UIButton) {
     }
     
-    @IBAction func BtnDivide(_ sender: Any) {
+    @IBAction func BtnTwo(_ sender: UIButton) {
     }
     
-    @IBAction func BtnSeven(_ sender: Any) {
+    @IBAction func BtnThree(_ sender: UIButton) {
     }
     
-    @IBAction func BtnEight(_ sender: Any) {
+    @IBAction func BtnFour(_ sender: UIButton) {
     }
     
-    @IBAction func BtnNine(_ sender: Any) {
+    @IBAction func BtnFive(_ sender: UIButton) {
     }
     
-    @IBAction func BtnMultiply(_ sender: Any) {
+    @IBAction func BtnSix(_ sender: UIButton) {
     }
     
-    @IBAction func BtnFour(_ sender: Any) {
+    @IBAction func BtnSeven(_ sender: UIButton) {
     }
     
-    @IBAction func BtnFive(_ sender: Any) {
+    @IBAction func BtnEight(_ sender: UIButton) {
     }
     
-    @IBAction func BtnSix(_ sender: Any) {
+    @IBAction func BtnNine(_ sender: UIButton) {
     }
     
-    @IBAction func BtnSubtract(_ sender: Any) {
+    @IBAction func BtnPlusMinus(_ sender: UIButton) {
     }
     
-    @IBAction func BtnOne(_ sender: Any) {
+    @IBAction func BtnDecimal(_ sender: UIButton) {
     }
     
-    @IBAction func BtnTwo(_ sender: Any) {
+    @IBAction func BtnEqual(_ sender: UIButton) {
     }
     
-    @IBAction func BtnThree(_ sender: Any) {
+    @IBAction func BtnAdd(_ sender: UIButton) {
     }
     
-    @IBAction func BtnAdd(_ sender: Any) {
+    @IBAction func BtnSubtract(_ sender: UIButton) {
     }
     
-    @IBAction func BtnAdd_Subtract(_ sender: Any) {
+    @IBAction func BtnMultiply(_ sender: UIButton) {
     }
     
-    @IBAction func BtnZero(_ sender: Any) {
+    @IBAction func BtnDivide(_ sender: UIButton) {
     }
     
-    @IBAction func BtnDecimal(_ sender: Any) {
+    @IBAction func BtnClear(_ sender: UIButton) {
     }
     
-    @IBAction func BtnEqual(_ sender: Any) {
+    @IBAction func BtnParentheses(_ sender: UIButton) {
+    }
+    
+    @IBAction func BtnPercentage(_ sender: UIButton) {
+    }
+    
+    @IBAction func BtnBack(_ sender: UIButton) {
     }
     
     
 }
-

@@ -1,9 +1,13 @@
 //
-//  AppDelegate.swift
+//  ViewController.swift
 //  CalculatorApp
 //
-//  Created by Hyo on 2022-09-25.
-//
+//  File name: CalculatorApp
+//  Author's nme: Carlos Norambuena Perez
+//  Student ID: 301265667
+//  Date: 2022-09-25
+//  App Description: Calculator App (Assigment 1)
+//  Version of Xcode: Version 14.0 (14A309)
 
 import UIKit
 

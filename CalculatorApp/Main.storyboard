@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculatorApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" opaque="NO" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -20,8 +20,11 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="268"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEV-1A-YYM" userLabel="Result">
-                                        <rect key="frame" x="15" y="90" width="360" height="68"/>
+                                        <rect key="frame" x="15" y="90" width="360.33333333333331" height="68"/>
                                         <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="360.32999999999998" id="V7R-2c-70q"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -31,10 +34,19 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="V7R-2c-70q"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="V7R-2c-70q"/>
+                                            </mask>
+                                        </variation>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odD-8c-f10">
-                                        <rect key="frame" x="293" y="162" width="97" height="98"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odD-8c-f10">
+                                        <rect key="frame" x="293.66666666666669" y="162" width="96" height="98"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
@@ -42,21 +54,52 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="70"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="BtnBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8vD-Cy-HpY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="zEV-1A-YYM" secondAttribute="bottom" constant="110" id="1hv-xR-uJu"/>
+                                    <constraint firstAttribute="bottom" secondItem="odD-8c-f10" secondAttribute="bottom" constant="8" id="3zA-Fl-nvK"/>
+                                    <constraint firstItem="odD-8c-f10" firstAttribute="leading" secondItem="DqG-aB-C4t" secondAttribute="leading" constant="293.66666666666669" id="6Th-Hj-Qvw"/>
                                     <constraint firstAttribute="trailing" secondItem="zEV-1A-YYM" secondAttribute="trailing" constant="15" id="G6f-Br-vkH"/>
                                     <constraint firstItem="zEV-1A-YYM" firstAttribute="leading" secondItem="DqG-aB-C4t" secondAttribute="leading" constant="15" id="Sou-WQ-37y"/>
                                     <constraint firstItem="zEV-1A-YYM" firstAttribute="top" secondItem="DqG-aB-C4t" secondAttribute="top" constant="90" id="crV-o9-lS4"/>
+                                    <constraint firstItem="odD-8c-f10" firstAttribute="top" secondItem="zEV-1A-YYM" secondAttribute="bottom" constant="4" id="hvb-Er-WhM"/>
+                                    <constraint firstAttribute="trailing" secondItem="odD-8c-f10" secondAttribute="trailing" constant="0.33333333333331439" id="vFE-m3-fJG"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1hv-xR-uJu"/>
+                                        <exclude reference="G6f-Br-vkH"/>
+                                        <exclude reference="Sou-WQ-37y"/>
+                                        <exclude reference="crV-o9-lS4"/>
+                                        <exclude reference="3zA-Fl-nvK"/>
+                                        <exclude reference="6Th-Hj-Qvw"/>
+                                        <exclude reference="hvb-Er-WhM"/>
+                                        <exclude reference="vFE-m3-fJG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1hv-xR-uJu"/>
+                                        <include reference="G6f-Br-vkH"/>
+                                        <include reference="Sou-WQ-37y"/>
+                                        <include reference="crV-o9-lS4"/>
+                                        <include reference="3zA-Fl-nvK"/>
+                                        <include reference="6Th-Hj-Qvw"/>
+                                        <include reference="hvb-Er-WhM"/>
+                                        <include reference="vFE-m3-fJG"/>
+                                    </mask>
+                                </variation>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="aj4-M8-Px8">
-                                <rect key="frame" x="0.0" y="315" width="390.33333333333331" height="475.33333333333326"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="aj4-M8-Px8" userLabel="Rows">
+                                <rect key="frame" x="0.0" y="315" width="390" height="475.33333333333326"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jcZ-hb-gz2">
-                                        <rect key="frame" x="0.0" y="0.0" width="390.33333333333331" height="68.666666666666671"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jcZ-hb-gz2" userLabel="First Row">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="68.666666666666671"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="0IB-z9-HCw">
                                                 <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="68.666666666666671"/>
@@ -75,6 +118,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="BtnClean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4X8-NW-AvK"/>
+                                                    <action selector="BtnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SrH-qU-gKY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="0gL-Ns-Mur">
@@ -93,6 +137,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
+                                                    <action selector="BtnParentheses:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZCl-VY-tKF"/>
                                                     <action selector="BtnParenthesis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f41-CX-COQ"/>
                                                 </connections>
                                             </button>
@@ -113,6 +158,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="BtnPercent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cnf-j4-hBQ"/>
+                                                    <action selector="BtnPercentage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8KL-35-awE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="fxy-Fl-Xbw">
@@ -131,15 +177,15 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnDivide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bsr-CO-ALA"/>
+                                                    <action selector="BtnDivide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yaE-0c-dAo"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TuP-l2-Gbt">
-                                        <rect key="frame" x="0.0" y="101.66666666666669" width="390.33333333333331" height="68.666666666666686"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TuP-l2-Gbt" userLabel="Second Row">
+                                        <rect key="frame" x="0.0" y="101.66666666666669" width="390" height="68.666666666666686"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="9XU-Ix-yEd">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="9XU-Ix-yEd">
                                                 <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="68.666666666666671"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -155,10 +201,10 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnSeven:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rc4-kf-oy7"/>
+                                                    <action selector="BtnSeven:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gsv-mg-WVE"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="nrn-ZE-oWc">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="nrn-ZE-oWc">
                                                 <rect key="frame" x="101.33333333333334" y="0.0" width="86.333333333333343" height="68.666666666666671"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -174,10 +220,10 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnEight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Fj-Bt-jZU"/>
+                                                    <action selector="BtnEight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOr-go-4if"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="RFi-1t-3Up">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="RFi-1t-3Up">
                                                 <rect key="frame" x="202.66666666666666" y="0.0" width="86.333333333333343" height="68.666666666666671"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -193,7 +239,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnNine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7EV-yV-GOU"/>
+                                                    <action selector="BtnNine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZGE-vO-F6j"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="a1b-JV-jPk">
@@ -212,15 +258,15 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnMultiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DXn-LT-YKC"/>
+                                                    <action selector="BtnMultiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fl5-9L-xkt"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XDw-LP-hPN">
-                                        <rect key="frame" x="0.0" y="203.33333333333337" width="390.33333333333331" height="68.666666666666686"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XDw-LP-hPN" userLabel="Third Row">
+                                        <rect key="frame" x="0.0" y="203.33333333333337" width="390" height="68.666666666666686"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="SzN-FG-5vv">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="SzN-FG-5vv">
                                                 <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="68.666666666666671"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -236,10 +282,10 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PaP-7b-tHf"/>
+                                                    <action selector="BtnFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hiz-x0-5Rf"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="JYl-7O-yMV">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="JYl-7O-yMV">
                                                 <rect key="frame" x="101.33333333333334" y="0.0" width="86.333333333333343" height="68.666666666666671"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -255,10 +301,10 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kju-qZ-Tu7"/>
+                                                    <action selector="BtnFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2f3-GX-9wF"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="TJ4-gI-WX1">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="TJ4-gI-WX1">
                                                 <rect key="frame" x="202.66666666666666" y="0.0" width="86.333333333333343" height="68.666666666666671"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -274,7 +320,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnSix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="be0-s3-gP4"/>
+                                                    <action selector="BtnSix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DI9-e5-fFp"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="UwL-RB-tus">
@@ -293,15 +339,15 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnSubtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yr8-Ho-bu5"/>
+                                                    <action selector="BtnSubtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ua-aw-slm"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zwf-U7-aRe">
-                                        <rect key="frame" x="0.0" y="305" width="390.33333333333331" height="68.666666666666686"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zwf-U7-aRe" userLabel="Fourth Row">
+                                        <rect key="frame" x="0.0" y="305" width="390" height="68.666666666666686"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="rrb-Hl-WEM">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="rrb-Hl-WEM">
                                                 <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="68.666666666666671"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -317,10 +363,10 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xhA-Ff-Dgd"/>
+                                                    <action selector="BtnOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZJ-GW-OL7"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dtY-vl-29u">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dtY-vl-29u">
                                                 <rect key="frame" x="101.33333333333334" y="0.0" width="86.333333333333343" height="68.666666666666671"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -336,10 +382,10 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFA-x2-VG2"/>
+                                                    <action selector="BtnTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0E8-y0-ij5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="0lf-H9-egA">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="0lf-H9-egA">
                                                 <rect key="frame" x="202.66666666666666" y="0.0" width="86.333333333333343" height="68.666666666666671"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -355,7 +401,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xon-Yl-Kw2"/>
+                                                    <action selector="BtnThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uwp-Of-Rlu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ZFw-R1-fDP">
@@ -374,13 +420,13 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L2Y-WO-YX6"/>
+                                                    <action selector="BtnAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="11h-bK-miB"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="CPn-aE-Eiw">
-                                        <rect key="frame" x="0.0" y="406.66666666666663" width="390.33333333333331" height="68.666666666666686"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="CPn-aE-Eiw" userLabel="Fifth Row">
+                                        <rect key="frame" x="0.0" y="406.66666666666663" width="390" height="68.666666666666686"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="KlD-Bx-fv9">
                                                 <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="68.666666666666671"/>
@@ -399,6 +445,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="BtnAdd_Subtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QkM-yS-3Jv"/>
+                                                    <action selector="BtnPlusMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rNS-LS-5s7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="PPU-zY-qNM">
@@ -418,6 +465,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="BtnZero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kgS-Dm-E8X"/>
+                                                    <action selector="Btnzero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pkL-52-I3Y"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="7xX-98-Inr">
@@ -436,7 +484,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnDecimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ATz-Nb-t3X"/>
+                                                    <action selector="BtnDecimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VXB-UD-d5q"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="OUD-E6-Jfg">
@@ -455,7 +503,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="02o-G2-7XF"/>
+                                                    <action selector="BtnEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYE-Pw-XET"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -476,6 +524,30 @@
                             <constraint firstItem="aj4-M8-Px8" firstAttribute="height" secondItem="DqG-aB-C4t" secondAttribute="height" multiplier="1.77273" id="pxW-a0-5AX"/>
                             <constraint firstItem="aj4-M8-Px8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vwA-rm-98W"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WkE-zo-8SJ"/>
+                                <exclude reference="I9U-we-UvW"/>
+                                <exclude reference="Ol6-iH-Ldn"/>
+                                <exclude reference="dir-lw-fpE"/>
+                                <exclude reference="E9y-DY-Iyx"/>
+                                <exclude reference="fTj-Av-Jxg"/>
+                                <exclude reference="pxW-a0-5AX"/>
+                                <exclude reference="vwA-rm-98W"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="WkE-zo-8SJ"/>
+                                <include reference="I9U-we-UvW"/>
+                                <include reference="Ol6-iH-Ldn"/>
+                                <include reference="dir-lw-fpE"/>
+                                <include reference="E9y-DY-Iyx"/>
+                                <include reference="fTj-Av-Jxg"/>
+                                <include reference="pxW-a0-5AX"/>
+                                <include reference="vwA-rm-98W"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
