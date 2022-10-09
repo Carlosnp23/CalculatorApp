@@ -12,12 +12,12 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculatorApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqG-aB-C4t">
-                                <rect key="frame" x="0.0" y="47" width="390" height="268"/>
+                                <rect key="frame" x="0.0" y="47" width="390.33333333333331" height="268"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEV-1A-YYM" userLabel="Result">
                                         <rect key="frame" x="15" y="90" width="360.33333333333331" height="68"/>
@@ -46,7 +46,7 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odD-8c-f10">
-                                        <rect key="frame" x="293.66666666666669" y="162" width="96" height="98"/>
+                                        <rect key="frame" x="293.66666666666669" y="162" width="96.333333333333314" height="98"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
@@ -96,10 +96,10 @@
                                 </variation>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="aj4-M8-Px8" userLabel="Rows">
-                                <rect key="frame" x="0.0" y="315" width="390" height="475.33333333333326"/>
+                                <rect key="frame" x="0.0" y="315" width="390.33333333333331" height="475.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jcZ-hb-gz2" userLabel="First Row">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="68.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390.33333333333331" height="68.666666666666671"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="0IB-z9-HCw">
                                                 <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="68.666666666666671"/>
@@ -117,8 +117,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnClean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4X8-NW-AvK"/>
-                                                    <action selector="BtnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SrH-qU-gKY"/>
+                                                    <action selector="BtnClean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iz8-k6-o4Q"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="0gL-Ns-Mur">
@@ -138,7 +137,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="BtnParentheses:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZCl-VY-tKF"/>
-                                                    <action selector="BtnParenthesis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f41-CX-COQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="2Js-hh-2vq">
@@ -157,7 +155,6 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="BtnPercent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cnf-j4-hBQ"/>
                                                     <action selector="BtnPercentage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8KL-35-awE"/>
                                                 </connections>
                                             </button>
@@ -183,7 +180,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TuP-l2-Gbt" userLabel="Second Row">
-                                        <rect key="frame" x="0.0" y="101.66666666666669" width="390" height="68.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="101.66666666666669" width="390.33333333333331" height="68.666666666666686"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="9XU-Ix-yEd">
                                                 <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="68.666666666666671"/>
@@ -264,7 +261,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XDw-LP-hPN" userLabel="Third Row">
-                                        <rect key="frame" x="0.0" y="203.33333333333337" width="390" height="68.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="203.33333333333337" width="390.33333333333331" height="68.666666666666686"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="SzN-FG-5vv">
                                                 <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="68.666666666666671"/>
@@ -345,7 +342,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zwf-U7-aRe" userLabel="Fourth Row">
-                                        <rect key="frame" x="0.0" y="305" width="390" height="68.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="305" width="390.33333333333331" height="68.666666666666686"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="rrb-Hl-WEM">
                                                 <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="68.666666666666671"/>
@@ -426,7 +423,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="CPn-aE-Eiw" userLabel="Fifth Row">
-                                        <rect key="frame" x="0.0" y="406.66666666666663" width="390" height="68.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="406.66666666666663" width="390.33333333333331" height="68.666666666666686"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="KlD-Bx-fv9">
                                                 <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="68.666666666666671"/>
@@ -445,7 +442,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="BtnAdd_Subtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QkM-yS-3Jv"/>
-                                                    <action selector="BtnPlusMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rNS-LS-5s7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="PPU-zY-qNM">
@@ -465,7 +461,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="BtnZero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kgS-Dm-E8X"/>
-                                                    <action selector="Btnzero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pkL-52-I3Y"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="7xX-98-Inr">
