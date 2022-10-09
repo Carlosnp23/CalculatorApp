@@ -549,6 +549,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="LblDisplay" destination="zEV-1A-YYM" id="SGk-CT-B34"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

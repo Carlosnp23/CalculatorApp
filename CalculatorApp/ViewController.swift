@@ -17,35 +17,46 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBOutlet weak var LblDisplay: UILabel!
     
     @IBAction func Btnzero(_ sender: UIButton) {
+        LblDisplay.text = LblDisplay.text! + "0"
     }
     
     @IBAction func BtnOne(_ sender: UIButton) {
+        LblDisplay.text = LblDisplay.text! + "1"
     }
     
     @IBAction func BtnTwo(_ sender: UIButton) {
+        LblDisplay.text = LblDisplay.text! + "2"
     }
     
     @IBAction func BtnThree(_ sender: UIButton) {
+        LblDisplay.text = LblDisplay.text! + "3"
     }
     
     @IBAction func BtnFour(_ sender: UIButton) {
+        LblDisplay.text = LblDisplay.text! + "4"
     }
     
     @IBAction func BtnFive(_ sender: UIButton) {
+        LblDisplay.text = LblDisplay.text! + "5"
     }
     
     @IBAction func BtnSix(_ sender: UIButton) {
+        LblDisplay.text = LblDisplay.text! + "6"
     }
     
     @IBAction func BtnSeven(_ sender: UIButton) {
+        LblDisplay.text = LblDisplay.text! + "7"
     }
     
     @IBAction func BtnEight(_ sender: UIButton) {
+        LblDisplay.text = LblDisplay.text! + "8"
     }
     
     @IBAction func BtnNine(_ sender: UIButton) {
+        LblDisplay.text = LblDisplay.text! + "9"
     }
     
     @IBAction func BtnPlusMinus(_ sender: UIButton) {
@@ -80,6 +91,5 @@ class ViewController: UIViewController {
     
     @IBAction func BtnBack(_ sender: UIButton) {
     }
-    
     
 }
