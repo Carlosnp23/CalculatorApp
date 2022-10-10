@@ -3,11 +3,11 @@
 //  CalculatorApp
 //
 //  File name: CalculatorApp
-//  Author's nme: Carlos Norambuena Perez
+//  Author's name: Carlos Norambuena Perez
 //  Student ID: 301265667
-//  Date: 2022-09-25
-//  App Description: Calculator App (Assigment 1)
-//  Version of Xcode: Version 14.0 (14A309)
+//  Date: 2022-10-09
+//  App Description: Calculator App (Assigment 2)
+//  Version of Xcode: Version 14.0.1 (14A400)
 
 import UIKit
 
