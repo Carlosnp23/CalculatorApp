@@ -302,6 +302,31 @@ class ViewController: UIViewController {
         LblDisplay_Landscape.text = LblDisplay_Landscape.text! + "9"
     }
     
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     //Delete last digit displayed
     @IBAction func BtnBack_Landscape(_ sender: Any) {
         
