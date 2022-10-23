@@ -243,21 +243,39 @@ class ViewController: UIViewController {
     //Numbers Landscape
     
     @IBAction func BtnZero_Landscape(_ sender: Any) {
+        cleanzero()
+        LblDisplay.text = LblDisplay.text! + "0"
+
     }
     
     @IBAction func BtnOne_Landscape(_ sender: Any) {
+        cleanzero()
+        LblDisplay.text = LblDisplay.text! + "1"
+
     }
     
     @IBAction func BtnTwo_Landscape(_ sender: Any) {
+        cleanzero()
+        LblDisplay.text = LblDisplay.text! + "2"
+
     }
     
     @IBAction func BtnThree_Landscape(_ sender: Any) {
+        cleanzero()
+        LblDisplay.text = LblDisplay.text! + "3"
+
     }
     
     @IBAction func BtnFour_Landscape(_ sender: Any) {
+        cleanzero()
+        LblDisplay.text = LblDisplay.text! + "4"
+
     }
     
     @IBAction func BtnFive_Landscape(_ sender: Any) {
+        cleanzero()
+        LblDisplay.text = LblDisplay.text! + "5"
+
     }
     
     @IBAction func BtnSix_Landscape(_ sender: Any) {
