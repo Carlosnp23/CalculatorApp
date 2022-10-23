@@ -573,6 +573,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                         <connections>
                                             <action selector="BtnPlusMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Bn-it-R80"/>
+                                            <action selector="BtnPlusMinus_Landscape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M4h-dB-dfs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="KtG-1f-vog" userLabel="=_Landscape">
@@ -593,6 +594,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                         <connections>
                                             <action selector="BtnEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qir-fq-iZR"/>
+                                            <action selector="BtnEqual_Landscape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4yc-W5-dat"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="4TF-uS-HLu" userLabel="._Landscape">
@@ -613,6 +615,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                         <connections>
                                             <action selector="BtnDecimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="754-Fr-0E1"/>
+                                            <action selector="BtnDecimal_Landscape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s60-8B-Hwg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="WED-6W-hfZ" userLabel="0_Landscape">
@@ -675,6 +678,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                         <connections>
                                             <action selector="BtnAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xke-ar-fsj"/>
+                                            <action selector="BtnAdd_Landscape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nlT-QB-DI1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dUg-MQ-8P2" userLabel="3_Landscape">
@@ -737,6 +741,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                         <connections>
                                             <action selector="BtnSubtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EzP-Zd-Jr0"/>
+                                            <action selector="BtnSubtract_Landscape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YL7-A3-Pb3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="DT3-TJ-zAk" userLabel="5_Landscape">
@@ -841,6 +846,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                         <connections>
                                             <action selector="BtnParentheses:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uve-vR-3ig"/>
+                                            <action selector="BtnParentheses_Landscape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b6W-RS-BQ5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Sdv-oT-Sap" userLabel="8_Landscape">
@@ -882,6 +888,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                         <connections>
                                             <action selector="BtnPercentage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4U-YR-HUg"/>
+                                            <action selector="BtnPercentage_Landscape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXc-Vb-KrQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="bvm-ub-Ms0" userLabel="7_Landscape">
@@ -923,6 +930,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                         <connections>
                                             <action selector="BtnClean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yQr-ir-Iif"/>
+                                            <action selector="BtnClean_Landscape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AhY-0Z-swS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="W8z-iG-g35" userLabel="X_Landscape">
@@ -943,6 +951,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                         <connections>
                                             <action selector="BtnMultiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uOJ-0Z-Jf7"/>
+                                            <action selector="BtnMultiply_Landscape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sp-hL-8cs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="rIh-j7-GCh" userLabel="÷_Landscape">
@@ -963,6 +972,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                         <connections>
                                             <action selector="BtnDivide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iYj-jy-YaR"/>
+                                            <action selector="BtnDivide_Landscape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1q5-dA-Tjo"/>
                                         </connections>
                                     </button>
                                 </subviews>

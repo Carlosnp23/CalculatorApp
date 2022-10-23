@@ -302,28 +302,35 @@ class ViewController: UIViewController {
         LblDisplay_Landscape.text = LblDisplay_Landscape.text! + "9"
     }
     
-        
+    @IBAction func BtnAdd_Landscape(_ sender: Any) {
+    }
     
+    @IBAction func BtnSubtract_Landscape(_ sender: Any) {
+    }
     
+    @IBAction func BtnMultiply_Landscape(_ sender: Any) {
+    }
     
+    @IBAction func BtnDivide_Landscape(_ sender: Any) {
+    }
     
+    @IBAction func BtnClean_Landscape(_ sender: Any) {
+    }
     
+    @IBAction func BtnParentheses_Landscape(_ sender: Any) {
+    }
     
+    @IBAction func BtnPercentage_Landscape(_ sender: Any) {
+    }
     
+    @IBAction func BtnPlusMinus_Landscape(_ sender: Any) {
+    }
     
+    @IBAction func BtnDecimal_Landscape(_ sender: Any) {
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    @IBAction func BtnEqual_Landscape(_ sender: Any) {
+    }
     
     
     
