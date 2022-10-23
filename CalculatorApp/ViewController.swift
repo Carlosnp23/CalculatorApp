@@ -6,7 +6,7 @@
 //  Author's name: Carlos Norambuena Perez
 //  Student ID: 301265667
 //  Date: 2022-10-22
-//  App Description: Calculator App (Assigment 2)
+//  App Description: Calculator App (Assigment 3)
 //  Version of Xcode: Version 14.0.1 (14A400)
 
 import UIKit
@@ -279,24 +279,24 @@ class ViewController: UIViewController {
     }
     
     @IBAction func BtnSix_Landscape(_ sender: Any) {
+        cleanzero()
+        LblDisplay.text = LblDisplay.text! + "6"
     }
     
     @IBAction func BtnSeven_Landscape(_ sender: Any) {
+        cleanzero()
+        LblDisplay.text = LblDisplay.text! + "7"
     }
     
     @IBAction func BtnEight_Landscape(_ sender: Any) {
+        cleanzero()
+        LblDisplay.text = LblDisplay.text! + "8"
     }
     
     @IBAction func BtnNine_Landscape(_ sender: Any) {
+        cleanzero()
+        LblDisplay.text = LblDisplay.text! + "9"
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     //New Operations Landscape
