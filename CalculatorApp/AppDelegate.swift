@@ -5,7 +5,7 @@
 //  File name: CalculatorApp
 //  Author's name: Carlos Norambuena Perez
 //  Student ID: 301265667
-//  Date: 2022-10-22
+//  Date: 2022-10-23
 //  App Description: Calculator App (Assigment 3)
 //  Version of Xcode: Version 14.0.1 (14A400)
 
