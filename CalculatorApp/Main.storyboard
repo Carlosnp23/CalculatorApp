@@ -548,6 +548,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                 <connections>
                                     <action selector="BtnBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wDu-Ry-QvE"/>
+                                    <action selector="BtnBack_Landscape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYZ-cI-nRH"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W1h-Bg-736" userLabel="View_Landscape">

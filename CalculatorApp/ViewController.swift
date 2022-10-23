@@ -25,6 +25,10 @@ class ViewController: UIViewController {
         if (LblDisplay.text == "0") {
             LblDisplay.text = ""
         }
+        else if (LblDisplay_Landscape.text == "0") {
+            LblDisplay_Landscape.text = ""
+            
+        }
     }
     
     //Result Display
@@ -220,7 +224,7 @@ class ViewController: UIViewController {
     @IBAction func BtnPercentage(_ sender: UIButton) {
         
         var ValuePercent = Double (LblDisplay.text!)
-        ValuePercent = ValuePercent! / 100.0
+        ValuePercent = ValuePercent! / 100
         LblDisplay.text = String(ValuePercent!)
         
     }
@@ -244,58 +248,69 @@ class ViewController: UIViewController {
     
     @IBAction func BtnZero_Landscape(_ sender: Any) {
         cleanzero()
-        LblDisplay.text = LblDisplay.text! + "0"
+        LblDisplay_Landscape.text = LblDisplay_Landscape.text! + "0"
 
     }
     
     @IBAction func BtnOne_Landscape(_ sender: Any) {
         cleanzero()
-        LblDisplay.text = LblDisplay.text! + "1"
+        LblDisplay_Landscape.text = LblDisplay_Landscape.text! + "1"
 
     }
     
     @IBAction func BtnTwo_Landscape(_ sender: Any) {
         cleanzero()
-        LblDisplay.text = LblDisplay.text! + "2"
+        LblDisplay_Landscape.text = LblDisplay_Landscape.text! + "2"
 
     }
     
     @IBAction func BtnThree_Landscape(_ sender: Any) {
         cleanzero()
-        LblDisplay.text = LblDisplay.text! + "3"
+        LblDisplay_Landscape.text = LblDisplay_Landscape.text! + "3"
 
     }
     
     @IBAction func BtnFour_Landscape(_ sender: Any) {
         cleanzero()
-        LblDisplay.text = LblDisplay.text! + "4"
+        LblDisplay_Landscape.text = LblDisplay_Landscape.text! + "4"
 
     }
     
     @IBAction func BtnFive_Landscape(_ sender: Any) {
         cleanzero()
-        LblDisplay.text = LblDisplay.text! + "5"
+        LblDisplay_Landscape.text = LblDisplay_Landscape.text! + "5"
 
     }
     
     @IBAction func BtnSix_Landscape(_ sender: Any) {
         cleanzero()
-        LblDisplay.text = LblDisplay.text! + "6"
+        LblDisplay_Landscape.text = LblDisplay_Landscape.text! + "6"
     }
     
     @IBAction func BtnSeven_Landscape(_ sender: Any) {
         cleanzero()
-        LblDisplay.text = LblDisplay.text! + "7"
+        LblDisplay_Landscape.text = LblDisplay_Landscape.text! + "7"
     }
     
     @IBAction func BtnEight_Landscape(_ sender: Any) {
         cleanzero()
-        LblDisplay.text = LblDisplay.text! + "8"
+        LblDisplay_Landscape.text = LblDisplay_Landscape.text! + "8"
     }
     
     @IBAction func BtnNine_Landscape(_ sender: Any) {
         cleanzero()
-        LblDisplay.text = LblDisplay.text! + "9"
+        LblDisplay_Landscape.text = LblDisplay_Landscape.text! + "9"
+    }
+    
+    //Delete last digit displayed
+    @IBAction func BtnBack_Landscape(_ sender: Any) {
+        
+        if(LblDisplay_Landscape.text!.count == 1 || LblDisplay_Landscape.text! == "0") {
+            LblDisplay_Landscape.text = "0"
+        }
+        else {
+            LblDisplay_Landscape.text?.removeLast()
+        }
     }
     
     
@@ -303,25 +318,20 @@ class ViewController: UIViewController {
     
     @IBAction func XSquare(_ sender: UIButton) {
                 
-        let value3 = (Double(Value1)!)
-        let value4 = (Double(2))
-        
-        let Result = String (value3 / value4)
-        let nunArray = Result.components(separatedBy: ".")
-        if nunArray[1] == "0" {
-            LblDisplay.text = nunArray[0]
-        }
-        else {
-            // %.8f for eight decimal places
-            let tip: Double = value3 / value4
-            let decimalResult: String = String(format: "%.8f", tip)
-            LblDisplay.text = decimalResult
-        }
-        
-        
+        let xSquare = Double (LblDisplay_Landscape.text!)
+                
+        let b: Double = 2
+        LblDisplay_Landscape.text = String((pow(Double(xSquare!),Double(b))))
+       
     }
     
     @IBAction func XCubed(_ sender: UIButton) {
+        
+        let xCubed = Double (LblDisplay_Landscape.text!)
+                
+        let b: Double = 3
+        LblDisplay_Landscape.text = String((pow(Double(xCubed!),Double(b))))
+        
     }
     
     @IBAction func Xn(_ sender: UIButton) {
